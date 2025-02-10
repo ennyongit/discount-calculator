@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    
+}
+
+.container{
+    display:flex;
+    flex-direction: column;
+}
+
+input{
+    margin-top: 2px;
+    margin-bottom: 5px;
+}
+
+button{
+    margin-top: 10px;
+    border: none;
+    color: white;
+    background-color: blue;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(41, 41, 175);
+}
+
+#result{
+    margin-top: 5px;
+}
+
+
+.input-container{
+    position: relative;
+    display: inline-block;
+}
+
+.input-container input{
+    padding-right: 40px;
+}
+
+.input-container .currency, .percentage{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    font-size: 14px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: rgb(100, 95, 95);
+}
